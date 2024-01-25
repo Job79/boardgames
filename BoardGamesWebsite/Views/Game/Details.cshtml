@@ -1,0 +1,47 @@
+@model Game
+
+@{
+    ViewBag.Title = "Spel Info";
+}
+
+<div class="container my-4" style="max-width: 50rem">
+    <div class="my-3 d-flex justify-content-between">
+        <span class="fw-bold m-2 h3">Spel Info</span>
+    </div>
+
+    <div class="mt-3 p-4 border rounded-4 bg-white">
+        <div class="d-flex justify-content-center mt-4 mb-5">
+            <img class="card-img-top mx-auto" style="height: 10rem; width: max-content" src="@Model.ImageUri" alt="Spel">
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="my-2">
+                    <span class="fw-bold d-block">Naam</span>
+                    <span>@Model.Name</span>
+                </div>
+                <div class="my-2">
+                    <span class="fw-bold d-block">Beschrijving</span>
+                    <span>
+                        @Model.Description
+                    </span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="my-2">
+                    <span class="fw-bold d-block">Genre</span>
+                    <span>@Model.Genre</span>
+                </div>
+                <div class="my-2">
+                    <span class="fw-bold d-block">Type</span>
+                    <span>@Model.Type</span>
+                </div>
+                <div class="my-2">
+                    <span class="fw-bold d-block">18+</span>
+                    <span>
+                        @(Model.Is18Plus ? "Ja" : "Nee")
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

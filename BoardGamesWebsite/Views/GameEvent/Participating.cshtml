@@ -1,0 +1,41 @@
+@model ICollection<GameEvent>
+
+@{
+    ViewBag.Title = "Inschrijvingen";
+}
+
+<div class="container my-4" style="max-width: 60rem">
+    <div class="my-3 d-flex justify-content-between">
+        <span class="fw-bold m-2 h3">Inschrijvingen</span>
+    </div>
+
+    <div class="mt-3 row">
+        @if (!Model.Any())
+        {
+            <span class="bg-white d-flex justify-content-center border rounded-3 p-3">
+                Geen inschrijvingen gevonden
+            </span>
+        }
+
+        @foreach (var gameEvent in Model)
+        {
+            <div class="p-2 col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                <div class="card p-3" style="width: 18rem;">
+                    <img class="card-img-top mx-auto" style="height: 8rem; width: max-content" src="@gameEvent.ImageUri" alt="card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@gameEvent.Name</h5>
+                        <p class="card-text">
+                            @gameEvent.DateTime.ToString("dd/MM/yyyy HH:mm")<br/>
+                            @gameEvent.Address.City - @gameEvent.Address.Street @gameEvent.Address.HouseNumber
+                        </p>
+                        <div class="mt-4">
+                            <a class="btn btn-primary w-100" asp-action="Details" asp-route-id="@gameEvent.Id">
+                                Spelavond Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

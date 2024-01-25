@@ -1,0 +1,50 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/var/home/job/.var/app/com.jetbrains.Rider/cache/JetBrains/Rider2023.2/resharper-host/temp/Rider/vAny/CoverageData/_BoardGamesWebsite.1125061049/Snapshot/snapshot.utdcvr</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df63f082_002Dfddd_002D4472_002D97f5_002Dfbb7907b5c21/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UserTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7DB75BAA-BA2C-43E4-8708-52E39CC4C17F::net7.0::Core.Domain.Tests.UserTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.GameRepositoryTest.ById_returns_result_with_id&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.GameRepositoryTest.ById_returns_game_with_id&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.GameRepositoryTest.ById_returns_null_when_game_with_id_does_not_exist&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.GameRepositoryTest.Query_returns_games_queryable&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.GameRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.SnackPreferenceRepositoryTest.ByIds_returns_single_snack_preference_when_single_id_matches&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.SnackPreferenceRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.UserRepositoryTest.ById_returns_user_with_id&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.UserRepositoryTest.Create_adds_user_to_context&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.RegistrationRepositoryTest.ByGameEvent_returns_all_registrations_for_game_event&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.RegistrationRepositoryTest.CalculateAttendanceForUsers_returns_attendance_for_users&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.RegistrationRepositoryTest.CalculateAttendanceForUsers_returns_empty_dictionary_when_no_registrations_for_users&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.RegistrationRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::094204A3-4316-408D-9B40-700E1131ED17::net7.0::Infrastructure.BoardGamesEF.Tests.Repositories.GameEventRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest.All_ReturnsAllGameEvents&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest.All_returns_empty_list_when_no_game_events_exist&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest.ById_returns_game_event_with_id&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest.ById_returns_null_when_game_event_with_id_does_not_exist&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest.Register_returns_registration_when_game_event_exists_and_user_is_logged_in&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest.Register_returns_404_when_game_event_with_id_does_not_exist&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.GameEventControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.LoginControllerTest.Login_WithValidCredentials_ReturnsToken&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.LoginControllerTest.Login_with_invalid_credentials_returns_unauthorized&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.GameControllerTest.Details_returns_game_with_id&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.GameControllerTest.Details_returns_not_found_when_game_with_id_does_not_exist&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.RegistrationControllerTest.Register_returns_redirect_to_participating_when_registration_succeeds&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.RegistrationControllerTest.Register_returns_error_view_when_registration_fails&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.RegistrationControllerTest.Register_returns_error_when_game_event_is_not_found&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Login_returns_view&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Login_with_valid_credentials_returns_redirect_to_all&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Login_with_invalid_credentials_returns_view_with_error&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Register_returns_view_with_snack_preferences&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Register_returns_view&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Register_with_valid_credentials_returns_redirect_to_all&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::B7EEAEFD-BFCE-41A2-8DAE-9674278B0E48::net7.0::BoardGamesApi.Tests.LoginControllerTest.Login_with_valid_credentials_returns_token&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Register_with_invalid_credentials_returns_view_with_error&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Logout_returns_redirect_to_login&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Logout_returns_redirect_to_all&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest.Settings_returns_view_with_user_model&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.AccountControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.GameEventControllerTest.All_returns_view_result_with_list_of_game_events&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::155D56D8-6686-40DD-B313-F57CEEE17F90::net7.0::BoardGamesWebsite.Tests.Controllers.GameEventControllerTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

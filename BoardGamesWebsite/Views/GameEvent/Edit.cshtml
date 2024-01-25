@@ -1,0 +1,87 @@
+@model GameEventModel
+
+@{
+    ViewBag.Title = "Spelavond Bewerken";
+}
+
+<div class="container my-4" style="max-width: 60rem">
+    <div class="my-3 d-flex justify-content-between">
+        <span class="fw-bold m-2 h3">Spelavond Bewerken</span>
+        <div class="my-auto d-flex">
+            <a class="btn btn-primary mx-2" asp-action="Registrations" asp-route-id="@Model.Id">Registraties</a>
+            
+            <form asp-action="Delete" method="post" asp-route-id="@Model.Id">
+                <button class="btn btn-primary mx-2">Verwijder</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-3 p-4 border rounded-4 bg-white">
+        <form asp-action="Edit" method="post">
+            <div class="form-group my-2">
+                <label class="form-label">Naam</label>
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="form-label">Image Url</label>
+                <input asp-for="ImageUri" class="form-control"/>
+                <span asp-validation-for="ImageUri" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="form-label">Maximum aantal deelnemers</label>
+                <input asp-for="MaxPlayers" class="form-control"/>
+                <span asp-validation-for="MaxPlayers" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="form-label">Datum en tijd</label>
+                <input asp-for="DateTime" type="datetime-local" class="form-control"/>
+                <span asp-validation-for="DateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="Duration" class="form-label">Tijdsduur in minuten</label>
+                <input asp-for="Duration" class="form-control"/>
+                <span asp-validation-for="Duration" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="City" class="form-label">Stad</label>
+                <input asp-for="City" class="form-control"/>
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="Street" class="form-label">Straat</label>
+                <input asp-for="Street" class="form-control"/>
+                <span asp-validation-for="Street" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="HouseNumber" class="form-label">Huisnummer</label>
+                <input asp-for="HouseNumber" class="form-control"/>
+                <span asp-validation-for="HouseNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="Games" class="form-label">Spellen</label>
+                <select multiple asp-for="Games" asp-items="ViewBag.Games" class="form-control form-select">
+                </select>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="AvailableSnacks" class="form-label">Beschikbare snacks</label>
+                <select multiple asp-for="AvailableSnacks" asp-items="ViewBag.SnackPreferences" class="form-control form-select">
+                </select>
+            </div>
+            <div class="form-group my-2">
+                <input class="form-check-input" type="checkbox" asp-for="Is18Plus">
+                <label class="form-check-label" asp-for="Is18Plus">
+                    Is 18+
+                </label>
+            </div>
+            <div class="form-group">
+                <div asp-validation-summary="All">
+                    <span class="text-danger">Corrigeer de volgende fouten:</span>
+                </div>
+                <div class="d-flex justify-content-center mt-4 mb-2">
+                    <button class="btn btn-primary" style="width: 15rem" type="submit">Opslaan</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
